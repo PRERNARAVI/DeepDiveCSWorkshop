@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-container {
+  background-color: #0d2b68;
+  width: 30vw;
+  height: 100vh;
+  overflow: scroll;
+
+}
+.nav-group {
+  margin-top: 150px;
+}
+.nav-item {
+  color: #fffaf0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.collapse-list {
+  background-color: white;
+}
+.accordion-head {
+  background-color: #0d2b68;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
