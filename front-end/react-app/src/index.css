@@ -28,17 +28,3 @@ code {
   font-weight: bolder;
   font-size: 30px;
 }
-.collapse-list {
-  background-color: white;
-}
-.accordion-head {
-  background-color: #0d2b68;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
