@@ -19,6 +19,12 @@ code {
   overflow: scroll;
 
 }
+.featured-container {
+  width: 100%;
+  height: 30vh;
+  overflow: scroll;
+
+}
 .nav-group {
   margin-top: 150px;
 }
@@ -27,4 +33,17 @@ code {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 30px;
+}
+
+.col_1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -40px;
+  margin-left: -40px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
 }

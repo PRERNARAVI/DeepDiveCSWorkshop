@@ -10,35 +10,45 @@ const options = [
 export default class HomePage extends Component {
     render() {
         return (
+            
             <div>
+                <Row className= "featured-container">
+                    <Featured>
+                        
+                    </Featured>
+
+                </Row>
+           
                 <Row>
-                <Col >
-                    <Row >
-                        {/** space for navigation bar LHS */}
-                        <div className= "nav-container">
-                            <Nav vertical className= "nav-group">
-                                <NavItem>
-                                    <NavLink className="nav-item" href="/">About</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-item" href="/schedule">Schedule</NavLink>
-                                </NavItem>
-                                 
-                                <NavItem>
-                                    <NavLink className="nav-item" href="#">Topics</NavLink>
-                                </NavItem>
-                                
-                            </Nav>
-                        </div>                   
-                    </Row>  
-                </Col>
-                    <Col >
-                        {/** Insert Featured and About Us components here RHS*/}
-                        <Featured/>
-                        <AboutUs/>
+                    <Col class = "col">
+                            <Row >
+                                {/** space for navigation bar LHS */}
+                                <div className= "nav-container">
+                                    <Nav vertical className= "nav-group">
+                                        <NavItem>
+                                            <NavLink className="nav-item" href="/">About</NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink className="nav-item" href="/schedule">Schedule</NavLink>
+                                        </NavItem>
+                                        
+                                        <NavItem>
+                                            <NavLink className="nav-item" href="#">Topics</NavLink>
+                                        </NavItem>
+                                        
+                                    </Nav>
+                                </div>                   
+                            </Row>  
                     </Col>
                 </Row>
+                   
+
+                    <Col >
+                        {/** Insert Featured and About Us components here RHS*/}
+                        <AboutUs/>
+                    </Col>
             </div>
+           
         )
     }
 }
