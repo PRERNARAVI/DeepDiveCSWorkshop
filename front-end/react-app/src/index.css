@@ -92,3 +92,12 @@ code {
     font-size: 3.25rem;
   }
 }
+
+/*Schedule Workshop Tile Cards*/
+.emptyCard {
+    border: 1px solid rgba(255, 255, 255, 0.13) !important;
+}
+
+#CardDeck-Container {
+  margin-top:2%;
+}
