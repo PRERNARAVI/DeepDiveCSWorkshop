@@ -8,7 +8,7 @@ export default class Featured extends Component {
         return (
             <div>
                 <Container className="featured-container">
-                    <img className = "fixedImage" src={require('./pic1.jpeg')}/>
+                    {/* <img className = "fixedImage" src={require('./pic1.jpeg')}/> */}
                      Featured Content
                      <a class = "top-right" color="#0d2b68"  font="bold" href="/schedule">CLICK ME</a>
                      <div class="bottom-left">Text about the Featured Content.</div>
