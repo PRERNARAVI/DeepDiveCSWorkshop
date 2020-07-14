@@ -46,3 +46,66 @@ code {
   font-family: verdana;
   font-size: 14px;
  }
+#nav-body {
+  width: 25%;
+  height: 100%;
+  z-index: 1; /*appears infront of other content*/
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+/* SITE CONTAINER CSS*/
+.site-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+/* SITE CONTENT CSS*/
+#content-body {
+  width: 100%;
+}
+
+/*HEADER CSS*/
+/* Workshop Header */
+#Workshop-Header {
+  display: block;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-image: url(Microsoft_Logo_Black.jpg);
+  background-size: 20%;
+  text-align: center;
+}
+
+@media screen and (min-width: 64em)
+{
+  #Workshop-Header {
+      padding: 5rem 6rem;
+  }
+}
+@media screen and (max-width: 42em)
+{
+    #Workshop-Header{
+      padding: 2rem 1rem;
+  }
+}
+
+/*Workshop Header Text*/
+#Workshop-Header-text {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+  background: linear-gradient(to right, #40caca 25%, #be8633 40%, #2583f7 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+@media screen and (min-width: 64em)
+{
+  #Workshop-Header-text  {
+    font-size: 3.25rem;
+  }
+}

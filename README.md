@@ -1,1 +1,1 @@
-# DeepDriveCoCreation
+# DeepDiveCSWorkshop

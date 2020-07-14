@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import {Row, Col} from 'react-bootstrap';
+import {Row, Col, Container} from 'react-bootstrap';
 import Featured from './Featured';
 import AboutUs from './AboutUs';
 import { Nav, NavItem, NavLink } from 'reactstrap';
+import Header from './Header';
 
 const options = [
     'one', 'two', 'three'
