@@ -71,7 +71,7 @@ export default class HomePage extends Component {
                         </div>                   
                     </Row>  
                 </Col>
-                <Col >
+                <Col xs={9}>
                     {/** Insert Featured and About Us components here RHS*/}
                     <Featured/>
                     <AboutUs/>
