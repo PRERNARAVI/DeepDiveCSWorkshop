@@ -4,10 +4,15 @@ import Featured from './Featured';
 import AboutUs from './AboutUs';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 import Header from './Header';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const options = [
     'one', 'two', 'three'
 ];
+// const $ = window.$;
+// $(".rotate").click(function(){
+//     $(this).toggleClass("down"); 
+// })
 export default class HomePage extends Component {
     constructor(props){
         super(props);
@@ -18,16 +23,23 @@ export default class HomePage extends Component {
     }
     togglePanel(e){
         this.setState({open: !this.state.open})
+        var icon = document.getElementById('icon');
+        if(this.state.open){
+            icon.className = 'fa fa-angle-down';  
+          } else{
+            icon.className = 'fa fa-angle-up';
+        }
     }
     render() {
         return (
             <div>
-                <Row>
+            <Header/>
+            <Row>
                 <Col >
                     <Row >
                         {/** space for navigation bar LHS */}
                         <div className= "nav-container">
-                            <Nav vertical className= "nav-group">
+                            <Nav vertical className= "nav-group" >
                                 <NavItem>
                                     <NavLink className="nav-item" href="/">About</NavLink>
                                 </NavItem>
@@ -36,13 +48,19 @@ export default class HomePage extends Component {
                                 </NavItem>
                                  
                                 <NavItem>
-                                    <NavLink className="nav-item" href="#">Topics</NavLink>
                                     <div>
-                                        <NavLink onClick={(e)=>this.togglePanel(e)} className="header">
-                                        Topics</NavLink>
+                                        <NavLink onClick={(e)=>this.togglePanel(e)} className="header" 
+                                        href="#">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" 
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                        Topics <i id="icon" class="fas fa-angle-down" ></i>
+                                        </a></NavLink>
                                         {this.state.open ? (
                                         <div className="content">
-                                        {this.props.children}
+                                        <li>Topic 1</li>
+                                        <li>Topic 2</li>
+                                        <li>Topic 3</li>
+                                        <li>Topic 4</li>
                                         </div>
                                         ) : null}
                                     </div>
@@ -53,13 +71,15 @@ export default class HomePage extends Component {
                         </div>                   
                     </Row>  
                 </Col>
-                    <Col >
-                        {/** Insert Featured and About Us components here RHS*/}
-                        <Featured/>
-                        <AboutUs/>
-                    </Col>
-                </Row>
+                <Col >
+                    {/** Insert Featured and About Us components here RHS*/}
+                    <Featured/>
+                    <AboutUs/>
+                </Col>
+            </Row>
             </div>
         )
+        
     }
+    
 }
