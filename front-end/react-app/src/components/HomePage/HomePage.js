@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Row, Col, Container} from 'react-bootstrap';
 import Featured from './Featured';
 import AboutUs from './AboutUs';
-import Fade  from './Fade';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 import Header from './Header';
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -73,7 +72,8 @@ export default class HomePage extends Component {
                         </div>                   
                     </Row>  
                 </Col>
-                <Col >
+                <Col xs={9}>
+                    <br></br>
                     {/** Insert Featured and About Us components here RHS*/}
                     <Featured/>
                     <AboutUs/>

@@ -1,17 +1,61 @@
 import React, {Component} from 'react';
 import {Row, Container} from 'react-bootstrap';
 import './imageCSS.css';
+import Fade from "./Fade";
 import { Nav, NavItem, NavLink } from 'reactstrap';
+import image1 from '../../pic1.jpeg';
+import image2 from '../../pic2.jpeg';
+import image3 from '../../pic3.jpeg';
+const fadeImages = [
+    image1,
+    image2,
+    image3
+  ];
 
+  const fadeProperties = {
+    duration: 5000,
+    transitionDuration: 500,
+    infinite: false,
+    indicators: true,
+    onChange: (oldIndex, newIndex) => {
+      console.log(`fade transition from ${oldIndex} to ${newIndex}`);
+    }
+  }
+
+  const Slideshow = () => {
+    return (
+      <div className="slide-container">
+        <Fade {...fadeProperties}>
+          <div className="each-fade">
+            <div className="image-container">
+              <img src={fadeImages[0]} />
+            </div>
+            <h2>First Slide</h2>
+          </div>
+          <div className="each-fade">
+            <div className="image-container">
+              <img src={fadeImages[1]} />
+            </div>
+            <h2>Second Slide</h2>
+          </div>
+          <div className="each-fade">
+            <div className="image-container">
+              <img src={fadeImages[2]} />
+            </div>
+            <h2>Third Slide</h2>
+          </div>
+        </Fade>
+      </div>
+    )
+  }
 export default class Featured extends Component {
     render() {
         return (
             <div>
                 <Container className="featured-container">
                     {/* <img className = "fixedImage" src={require('./pic1.jpeg')}/> */}
-                     Featured Content
-                     <a class = "top-right" color="#0d2b68"  font="bold" href="/schedule">CLICK ME</a>
-                     <div class="bottom-left">Text about the Featured Content.</div>
+                     <Slideshow></Slideshow>
+                     
 
                 </Container>
             </div>
