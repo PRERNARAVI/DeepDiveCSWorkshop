@@ -8,6 +8,16 @@ const options = [
     'one', 'two', 'three'
 ];
 export default class HomePage extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+        open: false
+        }
+        this.togglePanel = this.togglePanel.bind(this);
+    }
+    togglePanel(e){
+        this.setState({open: !this.state.open})
+    }
     render() {
         return (
             <div>
@@ -26,6 +36,16 @@ export default class HomePage extends Component {
                                  
                                 <NavItem>
                                     <NavLink className="nav-item" href="#">Topics</NavLink>
+                                    <div>
+                                        <NavLink onClick={(e)=>this.togglePanel(e)} className="header">
+                                        Topics</NavLink>
+                                        {this.state.open ? (
+                                        <div className="content">
+                                        {this.props.children}
+                                        </div>
+                                        ) : null}
+                                    </div>
+                                    
                                 </NavItem>
                                 
                             </Nav>
