@@ -14,10 +14,9 @@ code {
 
 .nav-container {
   background-color: #0d2b68;
-  width: 30vw;
+  width: 25vw;
   height: 100vh;
   overflow: scroll;
-
 }
 .nav-group {
   margin-top: 150px;
@@ -29,6 +28,20 @@ code {
   font-size: 30px;
 }
 
+.header{
+  cursor: pointer;
+  color: #fffaf0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.content{
+  cursor: pointer;
+  padding: 15px;
+  font-family: verdana;
+  font-size: 14px;
+ }
 #nav-body {
   width: 25%;
   height: 100%;
@@ -101,3 +114,14 @@ code {
 #CardDeck-Container {
   margin-top:2%;
 }
+.fa-arrow-down.open{
+  transform: rotate(180deg);
+  transition: transform 1s linear;
+}
+.fa-arrow-down{
+  transform: rotate(0deg);
+  transition: transform 1s linear;
+}
+
+
+ 
