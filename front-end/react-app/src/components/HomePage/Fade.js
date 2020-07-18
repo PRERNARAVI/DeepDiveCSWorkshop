@@ -123,7 +123,8 @@ class Fade extends Component {
     const { index } = this.state;
     const { children, infinite } = this.props;
     if (!infinite && index === children.length - 1) {
-      return;
+      this.fadeImages((index + 1) % children.length);
+      // return;
     }
     this.fadeImages((index + 1) % children.length);
   }

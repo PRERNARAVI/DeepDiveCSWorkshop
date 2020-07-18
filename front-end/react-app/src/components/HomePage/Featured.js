@@ -3,9 +3,9 @@ import {Row, Container} from 'react-bootstrap';
 import './imageCSS.css';
 import Fade from "./Fade";
 import { Nav, NavItem, NavLink } from 'reactstrap';
-import image1 from '../../pic1.jpeg';
-import image2 from '../../pic2.jpeg';
-import image3 from '../../pic3.jpeg';
+import image1 from '../../stacksQueues.png';
+import image2 from '../../timeComplexity.png';
+import image3 from '../../graphs.png';
 const fadeImages = [
     image1,
     image2,
