@@ -15,7 +15,7 @@ code {
 .nav-container {
   background-color: #000033;
   width: 25vw;
-  height: 73vh;
+  height: 79vh;
   
 }
 .featured-container {
@@ -29,7 +29,7 @@ code {
 }
 .home-page-container {
   overflow: scroll;
-  height: 70vh;
+  height: 76vh;
 }
 .about-us-text {
   color: lightblue;
@@ -47,12 +47,12 @@ code {
 }
 
 .nav-group {
-  margin-top: 150px;
+  margin-top: 80px;
 }
 .nav-item {
-  color: #fffaf0;
+  color: lightblue;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
+  font-weight: 800;
   font-size: 30px;
 }
 
@@ -70,9 +70,9 @@ code {
 }
 .header{
   cursor: pointer;
-  color: #fffaf0;
+  color: lightblue;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
+  font-weight: 800;
   font-size: 30px;
 }
 .background-container {
@@ -82,9 +82,16 @@ code {
 .content{
   cursor: pointer;
   padding: 15px;
-  font-family: verdana;
-  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 0em;
+  
  }
+
+.list {
+  margin: 10px 0;
+  font-size: large;
+}
 #nav-body {
   width: 25%;
   height: 100%;
@@ -94,28 +101,18 @@ code {
   overflow-x: hidden;
 }
 
-/* SITE CONTAINER CSS*/
-.site-container {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  position: relative;
-}
-
-/* SITE CONTENT CSS*/
-#content-body {
-  width: 100%;
-}
-
 /*HEADER CSS*/
 /* Workshop Header */
 #Workshop-Header {
-  display: block;
   background-repeat: no-repeat;
   background-color: black;
   background-image: url(Microsoft_Logo_Black.jpg);
-  background-size: 20%;
-  text-align: center;
+  background-size: 25%;
+  background-position-y: center;
+  height: 22vh;
+  width: 100%;
+  display: inline-block;
+  
 }
 
 @media screen and (min-width: 64em)
@@ -133,14 +130,16 @@ code {
 
 /*Workshop Header Text*/
 #Workshop-Header-text {
-  margin-top: 0;
-  margin-bottom: 0.1rem;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1em;
+  margin-left: 15rem;
   background: linear-gradient(to right, #40caca 25%, #be8633 40%, #2583f7 78%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: block;
   font-size: 2em;
   font-weight: bold;
+  text-align: center;
 }
 @media screen and (min-width: 64em)
 {
