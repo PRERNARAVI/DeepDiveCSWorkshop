@@ -21,7 +21,6 @@ code {
 .featured-container {
   width: 100%;
   height: 45vh;
-  overflow: scroll;
 
 }
 .nav-group {
