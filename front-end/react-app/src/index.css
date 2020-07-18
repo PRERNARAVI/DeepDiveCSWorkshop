@@ -24,6 +24,8 @@ code {
 .about-us-container {
   width: 100%;
   overflow: scroll;
+  height: 45vh;
+
 }
 .home-page-container {
   overflow: scroll;

@@ -26,6 +26,17 @@
 
 /* =========================== */
 
+.each-fade .button {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  width: 7px;
+  height: 5px;
+  cursor: pointer;
+}
+
 .slide-container {
   width: 90%;
   margin: 40px; }
