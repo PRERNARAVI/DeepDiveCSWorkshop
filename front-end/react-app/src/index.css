@@ -13,20 +13,36 @@ code {
 }
 
 .nav-container {
-  background-color: #0d2b68;
+  background-color: #000033;
   width: 25vw;
-  height: 100vh;
-  overflow: scroll;
+  height: 90vh;
+  
 }
 .featured-container {
   width: 100%;
 }
 .about-us-container {
   width: 100%;
+  overflow: scroll;
+}
+.home-page-container {
+  overflow: scroll;
+  height: 90vh;
 }
 .about-us-text {
-  color: black;
-  margin: 30px;
+  color: lightblue;
+  font-weight: 500;
+  margin: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+.about-us-heading {
+  color: lightblue;
+  font-weight: bold;
+  margin: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
 }
 
 .nav-group {
@@ -57,6 +73,9 @@ code {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 30px;
+}
+.background-container {
+  background-color: #000045;
 }
 
 .content{

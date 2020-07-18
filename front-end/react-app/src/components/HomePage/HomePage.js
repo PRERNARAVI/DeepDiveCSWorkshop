@@ -33,7 +33,7 @@ export default class HomePage extends Component {
     render() {
         return (
             
-            <div>
+            <div class="background-container">
             <Header/>
             <Row>
                 <Col >
@@ -75,8 +75,11 @@ export default class HomePage extends Component {
                 <Col xs={9}>
                     <br></br>
                     {/** Insert Featured and About Us components here RHS*/}
-                    <Featured/>
-                    <AboutUs/>
+                    <Container className="home-page-container">
+                        <Featured/>
+                        <AboutUs/>
+                    </Container>
+                    
                 </Col>
             </Row>
             </div>
