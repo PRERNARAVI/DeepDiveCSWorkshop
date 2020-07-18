@@ -6,6 +6,7 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 import image1 from '../../stacksQueues.png';
 import image2 from '../../timeComplexity.png';
 import image3 from '../../graphs.png';
+import { useParams } from 'react-router-dom';
 const fadeImages = [
     image1,
     image2,
@@ -26,24 +27,15 @@ const fadeImages = [
     return (
       <div className="slide-container">
         <Fade {...fadeProperties}>
-          <div className="each-fade">
-            <div className="image-container">
-              <img src={fadeImages[0]} />
-            </div>
-            <h2>First Slide</h2>
+
+          {fadeImages.map((pic, index) =>
+            <div className="each-fade">
+              <div className="image-container">
+                <img src={fadeImages[index]} />
+              </div>
+              <h2>{index + 1}</h2>
           </div>
-          <div className="each-fade">
-            <div className="image-container">
-              <img src={fadeImages[1]} />
-            </div>
-            <h2>Second Slide</h2>
-          </div>
-          <div className="each-fade">
-            <div className="image-container">
-              <img src={fadeImages[2]} />
-            </div>
-            <h2>Third Slide</h2>
-          </div>
+          )}
         </Fade>
       </div>
     )
