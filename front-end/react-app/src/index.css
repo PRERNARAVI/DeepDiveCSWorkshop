@@ -20,10 +20,15 @@ code {
 }
 .featured-container {
   width: 100%;
-  height: 30vh;
-  overflow: scroll;
-
 }
+.about-us-container {
+  width: 100%;
+}
+.about-us-text {
+  color: black;
+  margin: 30px;
+}
+
 .nav-group {
   margin-top: 150px;
 }
@@ -131,6 +136,3 @@ code {
   transform: rotate(0deg);
   transition: transform 1s linear;
 }
-
-
- 
