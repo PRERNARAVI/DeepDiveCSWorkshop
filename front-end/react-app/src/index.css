@@ -15,7 +15,7 @@ code {
 .nav-container {
   background-color: #000033;
   width: 25vw;
-  height: 90vh;
+  height: 73vh;
   
 }
 .featured-container {
@@ -29,11 +29,10 @@ code {
 }
 .home-page-container {
   overflow: scroll;
-  height: 90vh;
+  height: 70vh;
 }
 .about-us-text {
   color: lightblue;
-  font-weight: 500;
   margin: 40px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
