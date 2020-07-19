@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import {Row, Col, Container} from 'react-bootstrap';
-import Featured from './Featured';
-import AboutUs from './AboutUs';
+import Featured from '../Featured';
+import AboutUs from '../AboutUs';
 import { Nav, NavItem, NavLink } from 'reactstrap';
-import Header from './Header';
+import Header from '../Header';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Content from "./Content"
 
-export default class HomePage extends Component {
+export default class WeekTwo extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -73,8 +74,7 @@ export default class HomePage extends Component {
                     <br></br>
                     {/** Insert Featured and About Us components here RHS*/}
                     <Container className="home-page-container">
-                        <Featured/>
-                        <AboutUs/>
+                        <Content />
                     </Container>
                     
                 </Col>
