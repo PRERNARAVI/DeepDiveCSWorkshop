@@ -52,14 +52,14 @@ export default class WeekTwo extends Component {
                                         </a></NavLink>
                                         {this.state.open ? (
                                         <div className="content">
-                                        <li className="list">Week 1</li>
-                                        <li className ="list">Week 2</li>
-                                        <li className ="list">Week 3</li>
-                                        <li className ="list">Week 4</li>
-                                        <li className="list">Week 5</li>
-                                        <li className ="list">Week 6</li>
-                                        <li className ="list">Week 7</li>
-                                        <li className ="list">Week 8</li>
+                                        <li className="list"><NavLink className ="list" href="/week1">Week 1</NavLink></li>
+                                        <li className ="list"><NavLink className ="list" href="/week2">Week 2</NavLink></li>
+                                        <li className ="list"><NavLink className ="list" href="/week3">Week 3</NavLink></li>
+                                        <li className ="list"><NavLink className ="list" href="/week4">Week 4</NavLink></li>
+                                        <li className="list"><NavLink className ="list" href="/week5">Week 5</NavLink></li>
+                                        <li className ="list"><NavLink className ="list" href="/week6">Week 6</NavLink></li>
+                                        <li className ="list"><NavLink className ="list" href="/week7">Week 7</NavLink></li>
+                                        <li className ="list"><NavLink className ="list" href="/week8">Week 8</NavLink></li>
                                         </div>
                                         ) : null}
                                     </div>

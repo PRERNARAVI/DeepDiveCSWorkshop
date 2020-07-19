@@ -36,12 +36,33 @@ export default class Content extends Component {
                     Here are a few resources from the workshop that introduce you to Arrays and Strings!
                     </div>
                     <div>
-                    <iframe src="https://gtvault-my.sharepoint.com/personal/pravi34_gatech_edu/_layouts/15/Doc.aspx?sourcedoc={9e93ece5-b968-4454-9883-c452b9e4f673}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-                    <iframe src="https://gtvault-my.sharepoint.com/personal/pravi34_gatech_edu/_layouts/15/Doc.aspx?sourcedoc={9e93ece5-b968-4454-9883-c452b9e4f673}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                        {/** Calculated dimensions using aspect ratio, please change with scale */}
+                    <iframe className = "technical-weekTwo-ppt" src="https://gtvault-my.sharepoint.com/personal/pravi34_gatech_edu/_layouts/15/Doc.aspx?sourcedoc={9e93ece5-b968-4454-9883-c452b9e4f673}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="455px" height="281px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                    <iframe className = "technical-weekTwo-ppt" src="https://gtvault-my.sharepoint.com/personal/pravi34_gatech_edu/_layouts/15/Doc.aspx?sourcedoc={9e93ece5-b968-4454-9883-c452b9e4f673}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="455px" height="281px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                    </div>
+                    <h4 className="about-us-heading">Soft Skills Section</h4>
+                    <div className = "about-us-text">
+                    Here are a few resources from the workshop that give you tips on Proactive Communication!
                     </div>
                     <div>
                     <iframe className = "soft-skill-ppt" src="https://gtvault-my.sharepoint.com/personal/pravi34_gatech_edu/_layouts/15/Doc.aspx?sourcedoc={f1292387-001a-4d66-8428-a617574ad792}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="950px" height="565px" >This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
                     </div>
+                    <h4 className="about-us-heading">Frequently Asked Interview Questions for this Week's Topics</h4>
+                    <div className = "about-us-text">
+                    Insert Questions here
+                    </div>
+                    <div className="week-nav">
+                    <Row>
+                        <Col>
+                            <NavLink className = "previous-week-text" href="/week1">&lt; Previous Week</NavLink>
+                        </Col>
+                        <Col>
+                            <NavLink className = "next-week-text" href="/week3"> Next Week &gt;</NavLink>
+                        </Col>
+                    </Row>
+                    </div>
+                    <br></br>
+                    <br></br>
                  </Container>
 
                 
