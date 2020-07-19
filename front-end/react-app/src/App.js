@@ -12,7 +12,14 @@ function App() {
       <Switch>
           <Route exact path='/' component={HomePage} />     
           <Route path="/schedule" component={HomePage} /> 
+          <Route path='/week1' component={WeekTwo} />
           <Route path='/week2' component={WeekTwo} />
+          <Route path='/week3' component={WeekTwo} />
+          <Route path='/week4' component={WeekTwo} />
+          <Route path='/week5' component={WeekTwo} />
+          <Route path='/week6' component={WeekTwo} />
+          <Route path='/week7' component={WeekTwo} />
+          <Route path='/week8' component={WeekTwo} />
           
       </Switch>
     </div>
