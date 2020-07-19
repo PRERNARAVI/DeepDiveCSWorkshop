@@ -14,8 +14,9 @@ export default class AboutUs extends Component {
                     cement the data structures and computer science concepts that come up during technical 
                     interviews through weekly workshop meetings. These meetings will be in the form of 
                     videos (live or recorded) that go over computer science topics such as <b>arrays</b>, <b>linked lists</b>, 
-                    and <b>recursion</b>, and soft skills such as <b>working the clock</b>, <b>proactive communication</b> and <b>developing a solution.</b>
-                    
+                    and <b>recursion</b>, and soft skills such as <b>working the clock</b>, <b>proactive communication</b> and <b>developing a solution. </b>
+                    </div>
+                    <div className = "about-us-text">
                     In striving to attain this workshops goals, we will also be assigning coding questions that 
                     cover the technical topic explored each week and that are typically asked in a a technical interview  
                     </div>
