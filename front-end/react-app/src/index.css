@@ -154,3 +154,7 @@ code {
   transform: rotate(0deg);
   transition: transform 1s linear;
 }
+
+.soft-skill-ppt {
+  border-color: #000045;
+}
