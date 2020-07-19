@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Row, Col, Container} from 'react-bootstrap';
-import Featured from '../Featured';
-import AboutUs from '../AboutUs';
+import Featured from '../HomePage/Featured';
+import AboutUs from '../HomePage/AboutUs';
 import { Nav, NavItem, NavLink } from 'reactstrap';
-import Header from '../Header';
+import Header from '../HomePage/Header';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default class Content extends Component {
