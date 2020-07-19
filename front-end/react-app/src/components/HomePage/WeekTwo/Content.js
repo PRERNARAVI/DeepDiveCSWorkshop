@@ -31,7 +31,14 @@ export default class Content extends Component {
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/jX6kn9_U8qk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" width="950px" height="565px"></iframe>
                     </div>
 
-
+                    <h4 className="about-us-heading">Technical Skills Section</h4>
+                    <div className = "about-us-text">
+                    Here are a few resources from the workshop that introduce you to Arrays and Strings!
+                    </div>
+                    <div>
+                    <iframe src="https://gtvault-my.sharepoint.com/personal/pravi34_gatech_edu/_layouts/15/Doc.aspx?sourcedoc={9e93ece5-b968-4454-9883-c452b9e4f673}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                    <iframe src="https://gtvault-my.sharepoint.com/personal/pravi34_gatech_edu/_layouts/15/Doc.aspx?sourcedoc={9e93ece5-b968-4454-9883-c452b9e4f673}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                    </div>
                     <div>
                     <iframe className = "soft-skill-ppt" src="https://gtvault-my.sharepoint.com/personal/pravi34_gatech_edu/_layouts/15/Doc.aspx?sourcedoc={f1292387-001a-4d66-8428-a617574ad792}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="950px" height="565px" >This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
                     </div>
