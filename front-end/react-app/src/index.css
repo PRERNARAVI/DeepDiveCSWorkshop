@@ -132,7 +132,6 @@ code {
 #Workshop-Header-text {
   padding: 0px;
   margin: 0px;
-  line-height: 1em;
   margin-left: 15rem;
   background: linear-gradient(to right, #40caca 25%, #be8633 40%, #2583f7 78%);
   -webkit-background-clip: text;
