@@ -4,8 +4,6 @@ import {
     Card, Button, CardImg, CardTitle, CardText, CardGroup, CardDeck,
     CardSubtitle, CardBody
   } from 'reactstrap';
-import card_cover from   '../../assets/card_cover.jpg'
-import FullWidthTabs from './testTabs'
 
   const WorkshopWeekCards = (props) =>
   {
