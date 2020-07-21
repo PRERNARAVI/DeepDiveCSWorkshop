@@ -93,26 +93,24 @@ code {
   font-size: large;
 }
 #nav-body {
-  width: 25%;
+  width: 20%;
   height: 100%;
   z-index: 1; /*appears infront of other content*/
   top: 0;
   left: 0;
   overflow-x: hidden;
+  float: left;
 }
 
 /*HEADER CSS*/
 /* Workshop Header */
 #Workshop-Header {
+  display: block;
   background-repeat: no-repeat;
   background-color: black;
   background-image: url(Microsoft_Logo_Black.jpg);
-  background-size: 25%;
-  background-position-y: center;
-  height: 22vh;
-  width: 100%;
-  display: inline-block;
-  
+  background-size: 20%;
+  text-align: center;
 }
 
 @media screen and (min-width: 64em)
@@ -130,15 +128,14 @@ code {
 
 /*Workshop Header Text*/
 #Workshop-Header-text {
-  padding: 0px;
-  margin: 0px;
-  margin-left: 15rem;
+  margin-top: 0;
+  margin-bottom: 0.1rem;
   background: linear-gradient(to right, #40caca 25%, #be8633 40%, #2583f7 78%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: block;
   font-size: 2em;
   font-weight: bold;
-  text-align: center;
 }
 @media screen and (min-width: 64em)
 {
@@ -153,4 +150,53 @@ code {
 .fa-arrow-down{
   transform: rotate(0deg);
   transition: transform 1s linear;
+}
+
+/*SCHEDULE PAGE CSS*/
+
+/** Week Tiles **/
+#Week-Tile-Container {
+  padding-top: 25px;
+}
+.week-tile-muted-green{
+  background: linear-gradient(#437cc2, #2b383a);
+  height: inherit;
+  border-radius: 8px;
+}
+
+.week-tile-title {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 16px;
+  opacity: 0.8;
+  text-align: left;
+}
+
+.week-tile-body
+{
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+line-height: 1.2;
+margin-top: 7px;
+font-size: 25px;
+font-weight: 600;
+color: white;
+text-align: left;
+}
+
+.week-tile {
+  height: 150px;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: rgba(173, 186, 204, 0.25);
+}
+
+.week-tile-content{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 15px;
+  height: 100%;
+
 }

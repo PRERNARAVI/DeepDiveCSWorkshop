@@ -8,15 +8,31 @@ import {
   const WorkshopWeekCards = (props) =>
   {
       return(
-          <Container id = "CardDeck-Container">
+          <div  id = "Week-Tile-Container">
             <Row>
-                <Col xs>First, but unordered</Col>
-                <Col xs={{ order: 12 }}>Second, but last</Col>
-                <Col xs={{ order: 1 }}>Third, but second</Col>
+                <Col>
+                    <div className = "week-tile">
+                        <div className = "week-tile-muted-green">
+                            <div className = 'week-tile-content'>
+                                <div className = 'week-tile-title'>
+                                    Week One
+                                </div>
+                                <div className = 'week-tile-body'>
+                                    Arrays and Sorting 
+                                    <br/>
+                                    and
+                                    <br/>
+                                    Proactive Communication
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Col>
+                <Col >Second, but last</Col>
+                <Col >Third, but second</Col>
             </Row>
-          </Container>
-        
-          
+          </div>
+
       )
   }
   export default WorkshopWeekCards;
