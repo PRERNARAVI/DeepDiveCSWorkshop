@@ -211,8 +211,7 @@ text-align: left;
 .week-tile {
   height: 170px;
   position: relative;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-radius: 15px;
   box-shadow: rgba(173, 186, 204, 0.25);
 }
 
@@ -221,6 +220,16 @@ text-align: left;
   border-top-right-radius: 15px;
   padding: 15px;
   height: 100%;  
+}
+
+.week-tile:hover
+{
+        -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        transform: scale(1.03);
+        box-shadow:  0 0 10px 5px rgba(0,0,0,0.6);
+  
+
 }
 @media screen and (max-width: 50em)
 {
