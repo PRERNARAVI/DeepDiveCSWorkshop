@@ -23,7 +23,6 @@ code {
 }
 .about-us-container {
   width: 100%;
-  overflow: scroll;
   height: 45vh;
 
 }
@@ -38,6 +37,27 @@ code {
   font-size: 20px;
   text-align: left;
 }
+.previous-week-text {
+  color: lightblue;
+  margin: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  margin-left: 18px;
+}
+.next-week-text {
+  color: lightblue;
+  margin: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: right;
+  font-weight: bold;
+  margin-right: 18px;
+}
+.week-nav {
+  
+}
 .about-us-heading {
   color: lightblue;
   font-weight: bold;
@@ -47,7 +67,7 @@ code {
 }
 
 .nav-group {
-  margin-top: 80px;
+  margin-top: 55px;
 }
 .nav-item {
   color: lightblue;
@@ -85,12 +105,12 @@ code {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   margin-top: 0em;
-  
+  color: lightblue;
  }
 
 .list {
-  margin: 10px 0;
   font-size: large;
+  color: lightblue;
 }
 #nav-body {
   width: 20%;
@@ -261,4 +281,11 @@ text-align: left;
     word-wrap: break-word;
     overflow: hidden;
   }
+}
+.soft-skill-ppt {
+  border-color: #000045;
+}
+
+.technical-weekTwo-ppt {
+  margin: 15px;
 }
