@@ -125,12 +125,14 @@ code {
 /*HEADER CSS*/
 /* Workshop Header */
 #Workshop-Header {
-  display: block;
   background-repeat: no-repeat;
   background-color: black;
   background-image: url(Microsoft_Logo_Black.jpg);
-  background-size: 20%;
-  text-align: center;
+  background-size: 25%;
+  background-position-y: center;
+  height: 22vh;
+  width: 100%;
+  display: inline-block;
 }
 
 @media screen and (min-width: 64em)
@@ -148,14 +150,15 @@ code {
 
 /*Workshop Header Text*/
 #Workshop-Header-text {
-  margin-top: 0;
-  margin-bottom: 0.1rem;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 15rem;
   background: linear-gradient(to right, #40caca 25%, #be8633 40%, #2583f7 78%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: block;
   font-size: 2em;
   font-weight: bold;
+  text-align: center;
 }
 @media screen and (min-width: 64em)
 {
