@@ -113,12 +113,13 @@ code {
   color: lightblue;
 }
 #nav-body {
-  width: 25%;
+  width: 20%;
   height: 100%;
-  z-index: 1; /*appears infront of other content*/
+  z-index: 1; /*appears infront of other content*/  
   top: 0;
   left: 0;
   overflow-x: hidden;
+  float: left;
 }
 
 /*HEADER CSS*/
@@ -132,7 +133,6 @@ code {
   height: 22vh;
   width: 100%;
   display: inline-block;
-  
 }
 
 @media screen and (min-width: 64em)
@@ -175,6 +175,117 @@ code {
   transition: transform 1s linear;
 }
 
+/*SCHEDULE PAGE CSS*/
+
+/** Week Tiles **/
+#Week-Tile-Container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.week-tile-muted-green{
+  background-color: rgb(3, 29, 68);
+  height: inherit;
+  border-radius: 8px;
+}
+.week-tile-muted-blue{
+  background-color: rgb(4, 57, 94);
+  height: inherit;
+  border-radius: 8px;
+}
+.week-tile-muted-red{
+  background-color: rgb(112, 162, 136);
+  height: inherit;
+  border-radius: 8px;
+}
+.week-tile-muted-yellow {
+  background-color: rgb(218, 183, 133);
+  height: inherit;
+  border-radius: 8px;
+}
+.week-tile-muted-brown{
+  background-color: rgb(213, 137, 111);
+  height: inherit;
+  border-radius: 8px;
+}
+
+.week-tile-title {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 16px;
+  opacity: 0.8;
+  text-align: left;
+}
+
+.week-tile-seperator {
+  min-height: 10px;
+}
+.week-tile-body
+{
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+line-height: 1.2;
+margin-top: 7px;
+font-size: 25px;
+font-weight: 600;
+color: white;
+text-align: left;
+}
+
+.week-tile {
+  height: 170px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: rgba(173, 186, 204, 0.25);
+}
+
+.week-tile-content{
+  border-radius: 6px;
+  border-top-right-radius: 15px;
+  padding: 15px;
+  height: 100%;  
+}
+
+.week-tile:hover
+{
+        -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        transform: scale(1.03);
+        box-shadow:  0 0 10px 5px rgba(0,0,0,0.6);
+  
+
+}
+@media screen and (max-width: 50em)
+{
+ 
+  .week-tile {
+    height: 100px;
+  }
+  .week-tile-body{
+
+    margin-top:1px;
+    font-size: 13px;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+  .week-tile-title {
+  
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+
+@media screen and (max-width: 40em)
+{
+ 
+  .week-tile-body{
+
+    margin-top:1px;
+    font-size: 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+}
 .soft-skill-ppt {
   border-color: #000045;
 }
