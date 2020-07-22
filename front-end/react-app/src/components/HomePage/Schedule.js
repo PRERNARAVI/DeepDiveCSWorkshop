@@ -29,11 +29,11 @@ import card_cover from '../../assets/card_cover.jpg'
                                     Week One
                                 </div>
                                 <div className = 'week-tile-body'>
-                                    Arrays and Sorting 
+                                    Kickoff 
                                     <br/>
                                     and
                                     <br/>
-                                    Proactive Communication
+                                    How to Work the Clock
                                 </div>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ import card_cover from '../../assets/card_cover.jpg'
                                     Week Two
                                 </div>
                                 <div className = 'week-tile-body'>
-                                    Strings 
+                                    Arrays and Strings 
                                     <br/>
                                     and
                                     <br/>
@@ -65,11 +65,11 @@ import card_cover from '../../assets/card_cover.jpg'
                                     Week Three
                                 </div>
                                 <div className = 'week-tile-body'>
-                                    Strings 
+                                    Recursion 
                                     <br/>
                                     and
                                     <br/>
-                                    Proactive Communication
+                                    Design your Algorithm
                                 </div>
                             </div>
                         </div>
@@ -83,14 +83,14 @@ import card_cover from '../../assets/card_cover.jpg'
                         <div className = "week-tile-muted-yellow">
                             <div className = 'week-tile-content' >
                                 <div className = 'week-tile-title'>
-                                    Week One
+                                    Week Four
                                 </div>
                                 <div className = 'week-tile-body'>
-                                    Arrays and Sorting 
+                                    Time Complexity 
                                     <br/>
                                     and
                                     <br/>
-                                    Proactive Communication
+                                    Writing Code on the Whiteboard
                                 </div>
                             </div>
                         </div>
@@ -101,14 +101,14 @@ import card_cover from '../../assets/card_cover.jpg'
                         <div className = "week-tile-muted-brown">
                             <div className = 'week-tile-content' >
                                 <div className = 'week-tile-title'>
-                                    Week Two
+                                    Week Five
                                 </div>
                                 <div className = 'week-tile-body'>
-                                    Strings 
+                                    Trees and Binary Search 
                                     <br/>
                                     and
                                     <br/>
-                                    Proactive Communication
+                                    Talking through your Solution
                                 </div>
                             </div>
                         </div>
@@ -119,14 +119,14 @@ import card_cover from '../../assets/card_cover.jpg'
                         <div className = "week-tile-muted-green">
                             <div className = 'week-tile-content' >
                                 <div className = 'week-tile-title'>
-                                    Week Three
+                                    Week Six
                                 </div>
                                 <div className = 'week-tile-body'>
-                                    Strings 
+                                    Linked Lists 
                                     <br/>
                                     and
                                     <br/>
-                                    Proactive Communication
+                                    Handling Mistakes
                                 </div>
                             </div>
                         </div>
@@ -140,14 +140,14 @@ import card_cover from '../../assets/card_cover.jpg'
                         <div className = "week-tile-muted-blue">
                             <div className = 'week-tile-content' >
                                 <div className = 'week-tile-title'>
-                                    Week One
+                                    Week Seven
                                 </div>
                                 <div className = 'week-tile-body'>
-                                    Arrays and Sorting 
+                                    Stacks and Queues 
                                     <br/>
                                     and
                                     <br/>
-                                    Proactive Communication
+                                    Testing your Code
                                 </div>
                             </div>
                         </div>
@@ -158,14 +158,14 @@ import card_cover from '../../assets/card_cover.jpg'
                         <div className = "week-tile-muted-red">
                             <div className = 'week-tile-content' >
                                 <div className = 'week-tile-title'>
-                                    Week Two
+                                    Week Eight
                                 </div>
                                 <div className = 'week-tile-body'>
-                                    Strings 
+                                    Heaps 
                                     <br/>
                                     and
                                     <br/>
-                                    Proactive Communication
+                                    Increasing your Code Speed
                                 </div>
                             </div>
                         </div>
@@ -176,20 +176,42 @@ import card_cover from '../../assets/card_cover.jpg'
                         <div className = "week-tile-muted-brown">
                             <div className = 'week-tile-content' >
                                 <div className = 'week-tile-title'>
-                                    Week Three
+                                    Week Nine
                                 </div>
                                 <div className = 'week-tile-body'>
-                                    Strings 
+                                    Hashtables 
                                     <br/>
                                     and
                                     <br/>
-                                    Proactive Communication
+                                    Tackling Imposter Syndrome
                                 </div>
                             </div>
                         </div>
                     </div>
                 </Col>
             </Row>
+            <div className = "week-tile-seperator"></div>
+            <Row className="justify-content-md-center">
+                <Col xs={4}>
+                    <div className = "week-tile">
+                        <div className = "week-tile-muted-yellow">
+                            <div className = 'week-tile-content' >
+                                <div className = 'week-tile-title'>
+                                    Week Ten
+                                </div>
+                                <div className = 'week-tile-body'>
+                                    Graphs 
+                                    <br/>
+                                    and
+                                    <br/>
+                                    Putting it all Together
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Col>
+            </Row>
+                
           </div>
 
       )

@@ -180,6 +180,7 @@ code {
 /** Week Tiles **/
 #Week-Tile-Container {
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 .week-tile-muted-green{
   background-color: rgb(3, 29, 68);
