@@ -1,0 +1,50 @@
+{
+    "routes": [
+      {
+        "route": "/schedule",
+        "allowedRoles": ["authenticated"]
+      },
+      {
+        "route": "/week1",
+        "allowedRoles": ["authenticated"]
+      },
+
+      {
+        "route": "/week2",
+        "allowedRoles": ["authenticated"]
+      },
+      {
+        "route": "/week3",
+        "allowedRoles": ["authenticated"]
+      },
+
+      {
+        "route": "/week4",
+        "allowedRoles": ["authenticated"]
+      },
+
+      {
+        "route": "/week5",
+        "allowedRoles": ["authenticated"]
+      },
+
+      {
+        "route": "/week6",
+        "allowedRoles": ["authenticated"]
+      },
+
+      {
+        "route": "/week7",
+        "allowedRoles": ["authenticated"]
+      },
+
+      {
+        "route": "/week8",
+        "allowedRoles": ["authenticated"]
+      }
+
+    ],
+    "defaultHeaders": {
+      "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
+    }
+  }

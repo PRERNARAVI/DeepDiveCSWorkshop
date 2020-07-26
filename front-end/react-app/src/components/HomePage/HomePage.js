@@ -5,6 +5,7 @@ import AboutUs from './AboutUs';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 import Header from './Header';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Link } from "react-router-dom";
 
 export default class HomePage extends Component {
     constructor(props){
@@ -35,10 +36,10 @@ export default class HomePage extends Component {
                         <div className= "nav-container">
                             <Nav vertical className= "nav-group" >
                                 <NavItem>
-                                    <NavLink className="nav-item" href="/">About</NavLink>
+                                    <Link className="nav-item" to="/">About</Link>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-item" href="/schedule">Schedule</NavLink>
+                                    <Link className="nav-item" to="/schedule">Schedule</Link>
                                 </NavItem>
                                  
                                 <NavItem>
@@ -46,19 +47,19 @@ export default class HomePage extends Component {
                                         <NavLink onClick={(e)=>this.togglePanel(e)} className="header" 
                                         href="#">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion" 
-                                            aria-expanded="true" aria-controls="collapseOne" >
+                                            aria-expanded="true" aria-controls="collapseOne">
                                         Weeks <i id="icon" class="fas fa-angle-down" ></i>
                                         </a></NavLink>
                                         {this.state.open ? (
                                         <div className="content">
-                                        <li className="list"><NavLink className ="list" href="/week1">Week 1</NavLink></li>
-                                        <li className ="list"><NavLink className ="list" href="/week2">Week 2</NavLink></li>
-                                        <li className ="list"><NavLink className ="list" href="/week3">Week 3</NavLink></li>
-                                        <li className ="list"><NavLink className ="list" href="/week4">Week 4</NavLink></li>
-                                        <li className="list"><NavLink className ="list" href="/week5">Week 5</NavLink></li>
-                                        <li className ="list"><NavLink className ="list" href="/week6">Week 6</NavLink></li>
-                                        <li className ="list"><NavLink className ="list" href="/week7">Week 7</NavLink></li>
-                                        <li className ="list"><NavLink className ="list" href="/week8">Week 8</NavLink></li>
+                                        <li className="list"><Link className ="list" to="/week1">Week 1</Link></li>
+                                        <li className ="list"><Link className ="list" to="/week2">Week 2</Link></li>
+                                        <li className ="list"><Link className ="list" to="/week3">Week 3</Link></li>
+                                        <li className ="list"><Link className ="list" to="/week4">Week 4</Link></li>
+                                        <li className="list"><Link className ="list" to="/week5">Week 5</Link></li>
+                                        <li className ="list"><Link className ="list" to="/week6">Week 6</Link></li>
+                                        <li className ="list"><Link className ="list" to="/week7">Week 7</Link></li>
+                                        <li className ="list"><Link className ="list" to="/week8">Week 8</Link></li>
                                         </div>
                                         ) : null}
                                     </div>

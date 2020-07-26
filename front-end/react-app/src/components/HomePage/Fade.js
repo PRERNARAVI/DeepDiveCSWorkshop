@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-foreign-prop-types */
 import React, { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
 import TWEEN from '@tweenjs/tween.js';
@@ -63,7 +64,7 @@ class Fade extends Component {
         clearTimeout(this.timeout);
       }
     }
-    if (this.props.children.length != props.children.length) {
+    if (this.props.children.length !== props.children.length) {
       this.applyStyle();
       this.play();
     }
@@ -139,7 +140,7 @@ class Fade extends Component {
   }
 
   navigate({ currentTarget: { dataset } }) {
-    if (dataset.key != this.state.index) {
+    if (dataset.key !== this.state.index) {
       this.goTo(parseInt(dataset.key));
     }
   }
