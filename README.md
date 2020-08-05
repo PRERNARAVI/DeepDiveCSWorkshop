@@ -10,4 +10,4 @@ As a starter, the workshop has also been introduced to 3200+ Microsoft 2020 inte
 
 This website serves as a guide that showcases topics from each week of the workshop along with the videos and documents that supplement the meetings. This gives students the flexibility to learn at their own pace and contact us as and when they have any questions.
 
-<b> Link to deloyed website: https://deepdive.z13.web.core.windows.net/#/ </b>
+<b> Link to deployed website: https://deepdive.z13.web.core.windows.net/#/ </b>
