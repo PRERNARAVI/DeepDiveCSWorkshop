@@ -1,4 +1,4 @@
-# DeepDiveCSWorkshop
+# Microsoft DeepDive Computer Science Workshop
 
 <b>This is a ten-week workshop series to introduce students to computer science foundations and the skills/techniques to keep in mind during a technical interview!</b>
 
