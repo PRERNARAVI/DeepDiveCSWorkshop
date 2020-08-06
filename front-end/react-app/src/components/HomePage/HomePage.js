@@ -24,19 +24,31 @@ export default class HomePage extends Component {
             icon.className = 'fa fa-angle-up';
         }
     }
+    componentDidMount() {
+        const height = document.getElementById("background-container").scrollHeight 
+        const listItemHeight = document.getElementById("active-page").clientHeight 
+        this.setState({height})
+        this.setState({listItemHeight})
+    }
+
     render() {
         return (
             
-            <div class="background-container">
+            <div id="background-container">
             <Header/>
             <Row>
-                <Col >
+                <Col md = {2} sm = {2} xs = {2}>
                     <Row >
                         {/** space for navigation bar LHS */}
-                        <div className= "nav-container">
+                        <div className= "nav-container" style={{height: this.state.height}}>
                             <Nav vertical className= "nav-group" >
                                 <NavItem>
+                                    <div id = "active-page">
                                     <Link className="nav-item" to="/">About</Link>
+                                    
+                                    </div>
+                                   
+                                    <div id = "triangle" style ={{borderWidth: Math.ceil(this.state.listItemHeight*.5) }}></div>
                                 </NavItem>
                                 <NavItem>
                                     <Link className="nav-item" to="/schedule">Schedule</Link>
@@ -73,7 +85,7 @@ export default class HomePage extends Component {
                 <Col xs={9}>
                     <br></br>
                     {/** Insert Featured and About Us components here RHS*/}
-                    <Container className="home-page-container">
+                    <Container id="home-page-container">
                         <Featured/>
                         <AboutUs/>
                     </Container>

@@ -25,27 +25,39 @@ export default class WeekTwo extends Component {
             icon.className = 'fa fa-angle-up';
         }
     }
+    componentDidMount() {
+        const height = document.getElementById("background-container").scrollHeight
+        const listItemHeight = document.getElementById("active-page").clientHeight 
+        this.setState({height})
+        this.setState({listItemHeight})
+    }
+
     render() {
         return (
             
-            <div class="background-container">
+            <div id="background-container">
             <Header/>
             <Row>
-                <Col >
+                <Col md = {2}>
                     <Row >
                         {/** space for navigation bar LHS */}
-                        <div className= "nav-container">
+                        <div className= "nav-container "  style={{height: this.state.height}} >
                             <Nav vertical className= "nav-group" >
                                 <NavItem>
                                     <Link className="nav-item" to="/">About</Link>
                                 </NavItem>
                                 <NavItem>
+                                <div id = "active-page">
                                     <Link className="nav-item" to="/schedule">Schedule</Link>
+                                    </div>
+                                    <div id = "triangle" style ={{borderWidth: Math.ceil(this.state.listItemHeight*.5) }}>
+
+                                    </div>
                                 </NavItem>
                                  
                                 <NavItem>
                                     <div>
-                                        <NavLink onClick={(e)=>this.togglePanel(e)} className="header" 
+                                        <NavLink onClick={(e)=>this.togglePanel(e)} className="header nav-item" 
                                         href="#">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion" 
                                             aria-expanded="true" aria-controls="collapseOne" >
@@ -53,14 +65,14 @@ export default class WeekTwo extends Component {
                                         </a></NavLink>
                                         {this.state.open ? (
                                         <div className="content">
-                                        <li className="list"><Link className ="list" to="/week1">Week 1</Link></li>
-                                        <li className ="list"><Link className ="list" to="/week2">Week 2</Link></li>
-                                        <li className ="list"><Link className ="list" to="/week3">Week 3</Link></li>
-                                        <li className ="list"><Link className ="list" to="/week4">Week 4</Link></li>
-                                        <li className="list"><Link className ="list" to="/week5">Week 5</Link></li>
-                                        <li className ="list"><Link className ="list" to="/week6">Week 6</Link></li>
-                                        <li className ="list"><Link className ="list" to="/week7">Week 7</Link></li>
-                                        <li className ="list"><Link className ="list" to="/week8">Week 8</Link></li>
+                                        <li className="list"><Link className ="list nav-item" to="/week1">Week 1</Link></li>
+                                        <li className ="list"><Link className ="list nav-item" to="/week2">Week 2</Link></li>
+                                        <li className ="list"><Link className ="list nav-item" to="/week3">Week 3</Link></li>
+                                        <li className ="list"><Link className ="list nav-item" to="/week4">Week 4</Link></li>
+                                        <li className="list"><Link className ="list nav-item" to="/week5">Week 5</Link></li>
+                                        <li className ="list"><Link className ="list nav-item" to="/week6">Week 6</Link></li>
+                                        <li className ="list"><Link className ="list nav-item" to="/week7">Week 7</Link></li>
+                                        <li className ="list"><Link className ="list nav-item" to="/week8">Week 8</Link></li>
                                         </div>
                                         ) : null}
                                     </div>
@@ -74,7 +86,7 @@ export default class WeekTwo extends Component {
                 <Col xs={9}>
                     <br></br>
                     {/** Insert Featured and About Us components here RHS*/}
-                    <Container className="home-page-container">
+                    <Container id="home-page-container">
                         <Schedule />
                     </Container>
                     

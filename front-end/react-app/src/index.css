@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: pink;
 }
 
 code {
@@ -13,10 +14,26 @@ code {
 }
 
 .nav-container {
-  background-color: #000033;
-  width: 25vw;
-  height: 79vh;
-  
+  background-color: #58a4b0;
+  width:100%;
+}
+
+#active-page {
+  background-color: white;
+  width:80%;
+  display: inline-block;
+  border:solid black 
+}
+
+#triangle {
+  float:right;
+  width: 0px;
+height: 0px;
+  display:inline;
+border-style: solid;
+margin-top: 3px;
+border-color: transparent transparent transparent #000000;
+position:absolute;
 }
 .featured-container {
   width: 100%;
@@ -26,9 +43,9 @@ code {
   height: 45vh;
 
 }
-.home-page-container {
-  overflow: scroll;
-  height: 76vh;
+#home-page-container {
+  overflow-wrap: inherit;
+  height: 100vh;
 }
 .about-us-text {
   color: lightblue;
@@ -70,7 +87,8 @@ code {
   margin-top: 55px;
 }
 .nav-item {
-  color: lightblue;
+  color: black;
+  text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 30px;
@@ -95,8 +113,10 @@ code {
   font-weight: 800;
   font-size: 30px;
 }
-.background-container {
-  background-color: #000045;
+#background-container {
+  background-color:white;
+  height:100%;
+  width:100%;
 }
 
 .content{
@@ -128,18 +148,19 @@ code {
   background-repeat: no-repeat;
   background-color: black;
   background-image: url(Microsoft_Logo_Black.jpg);
-  background-size: 25%;
-  background-position-y: center;
-  height: 22vh;
+  background-size: 20%;
+  background-position-y: left;
+ 
   width: 100%;
-  display: inline-block;
+ 
 }
 
 @media screen and (min-width: 64em)
 {
   #Workshop-Header {
-      padding: 5rem 6rem;
+      padding: 3rem 6rem;
   }
+ 
 }
 @media screen and (max-width: 42em)
 {
@@ -152,18 +173,20 @@ code {
 #Workshop-Header-text {
   padding: 0px;
   margin: 0px;
-  margin-left: 15rem;
+
   background: linear-gradient(to right, #40caca 25%, #be8633 40%, #2583f7 78%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
   text-align: center;
+ 
 }
 @media screen and (min-width: 64em)
 {
   #Workshop-Header-text  {
-    font-size: 3.25rem;
+    font-size: 3.65rem;
+    
   }
 }
 .fa-arrow-down.open{
@@ -284,6 +307,11 @@ text-align: left;
     font-size: 10px;
     word-wrap: break-word;
     overflow: hidden;
+  }
+
+  .nav-item {
+   
+    font-size: 8px;
   }
 }
 .soft-skill-ppt {
