@@ -16,6 +16,7 @@ code {
   background-color: #000033;
   width: 25vw;
   height: 79vh;
+  margin-left: 0px;
   
 }
 .featured-container {
@@ -99,6 +100,13 @@ code {
 }
 .background-container {
   background-color: #000045;
+  padding: 0px;
+}
+a:visited {
+  text-decoration: none;
+}
+nav a {
+  text-decoration: none;
 }
 
 .content{
@@ -190,26 +198,31 @@ code {
   background-color: rgb(3, 29, 68);
   height: inherit;
   border-radius: 8px;
+  cursor: pointer;
 }
 .week-tile-muted-blue{
   background-color: rgb(4, 57, 94);
   height: inherit;
   border-radius: 8px;
+  cursor: pointer;
 }
 .week-tile-muted-red{
   background-color: rgb(112, 162, 136);
   height: inherit;
   border-radius: 8px;
+  cursor: pointer;
 }
 .week-tile-muted-yellow {
   background-color: rgb(218, 183, 133);
   height: inherit;
   border-radius: 8px;
+  cursor: pointer;
 }
 .week-tile-muted-brown{
   background-color: rgb(213, 137, 111);
   height: inherit;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .week-tile-title {

@@ -26,15 +26,15 @@ export default class NavBar extends Component {
             <div className= "nav-container">
                 <Nav vertical className= "nav-group" >
                     <NavItem>
-                        <NavLink className="nav-item" to="/">About</NavLink>
+                        <NavLink style={{ textDecoration: 'none' }} className="nav-item" to="/">About</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-item" to="/schedule">Schedule</NavLink>
+                        <NavLink style={{ textDecoration: 'none' }} className="nav-item" to="/schedule">Schedule</NavLink>
                     </NavItem>
                         
                     <NavItem>
                         <div>
-                            <NavLink onClick={(e)=>this.togglePanel(e)} className="header" 
+                            <NavLink style={{ textDecoration: 'none' }} onClick={(e)=>this.togglePanel(e)} className="header" 
                             to="#">
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" 
                                 aria-expanded="true" aria-controls="collapseOne">
@@ -42,14 +42,14 @@ export default class NavBar extends Component {
                             </a></NavLink>
                             {this.state.open ? (
                             <div className="content">
-                            <li className="list"><NavLink className ="list" to="/week1">Week 1</NavLink></li>
-                            <li className ="list"><NavLink className ="list" to="/week2">Week 2</NavLink></li>
-                            <li className ="list"><NavLink className ="list" to="/week3">Week 3</NavLink></li>
-                            <li className ="list"><NavLink className ="list" to="/week4">Week 4</NavLink></li>
-                            <li className="list"><NavLink className ="list" to="/week5">Week 5</NavLink></li>
-                            <li className ="list"><NavLink className ="list" to="/week6">Week 6</NavLink></li>
-                            <li className ="list"><NavLink className ="list" to="/week7">Week 7</NavLink></li>
-                            <li className ="list"><NavLink className ="list" to="/week8">Week 8</NavLink></li>
+                            <li className="list"><NavLink style={{ textDecoration: 'none' }} className ="list" to="/week1">Week 1</NavLink></li>
+                            <li className ="list"><NavLink style={{ textDecoration: 'none' }} className ="list" to="/week2">Week 2</NavLink></li>
+                            <li className ="list"><NavLink style={{ textDecoration: 'none' }} className ="list" to="/week3">Week 3</NavLink></li>
+                            <li className ="list"><NavLink style={{ textDecoration: 'none' }} className ="list" to="/week4">Week 4</NavLink></li>
+                            <li className="list"><NavLink style={{ textDecoration: 'none' }} className ="list" to="/week5">Week 5</NavLink></li>
+                            <li className ="list"><NavLink style={{ textDecoration: 'none' }} className ="list" to="/week6">Week 6</NavLink></li>
+                            <li className ="list"><NavLink style={{ textDecoration: 'none' }} className ="list" to="/week7">Week 7</NavLink></li>
+                            <li className ="list"><NavLink style={{ textDecoration: 'none' }} className ="list" to="/week8">Week 8</NavLink></li>
                             </div>
                             ) : null}
                         </div>   

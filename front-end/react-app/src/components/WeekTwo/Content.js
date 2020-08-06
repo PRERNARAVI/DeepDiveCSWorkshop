@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import {Row, Col, Container} from 'react-bootstrap';
-import Featured from '../HomePage/Featured';
-import AboutUs from '../HomePage/AboutUs';
-import { Nav, NavItem, NavLink } from 'reactstrap';
-import Header from '../Header';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { NavLink } from "react-router-dom";
 
 export default class Content extends Component {
     render() {
@@ -54,10 +51,10 @@ export default class Content extends Component {
                     <div className="week-nav">
                     <Row>
                         <Col>
-                            <NavLink className = "previous-week-text" href="/week1">&lt; Previous Week</NavLink>
+                            <NavLink style={{ textDecoration: 'none' }} className = "previous-week-text" to="/week1">&lt; Previous Week</NavLink>
                         </Col>
                         <Col>
-                            <NavLink className = "next-week-text" href="/week3"> Next Week &gt;</NavLink>
+                            <NavLink style={{ textDecoration: 'none' }} className = "next-week-text" to="/week3"> Next Week &gt;</NavLink>
                         </Col>
                     </Row>
                     </div>
