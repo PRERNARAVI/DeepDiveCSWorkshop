@@ -3,7 +3,7 @@ import {Row, Col, Container} from 'react-bootstrap';
 import Featured from '../HomePage/Featured';
 import AboutUs from '../HomePage/AboutUs';
 import { Nav, NavItem, NavLink } from 'reactstrap';
-import Header from '../HomePage/Header';
+import Header from '../Header';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default class Content extends Component {
